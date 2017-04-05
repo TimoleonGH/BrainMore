@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryLight">#4DB6AC</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#ffc107</color>
+    <color name="colorGreen">#259b24</color>
+    <color name="colorRed">#e51c23</color>
+    <color name="colorBlue">#4493ff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#9e9e9e</color>
+    <color name="colorMapGray">#eaeaea</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#9e000000</color>
+    <color name="colorHighlight">#009688</color>
+    <color name="colorBG">#607d8b</color>
+
+    <color name="colorLoginCB">#009688</color>
+    <color name="colorSignInCB">#ffc107</color>
+
+    <color name="colorEditText">#00ffffff</color>
+
+    <color name="bg_gradient_start">#31244e</color>
+    <color name="bg_gradient_end">#6b394c</color>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="all">
+        <item
+            android:id="@+id/d2Colors"
+            android:title="Colors"
+            android:icon="@drawable/common_plus_signin_btn_text_dark_pressed">
+        </item>
+
+        <item
+            android:id="@+id/d2Sizes"
+            android:title="Sizes"
+            android:icon="@mipmap/ic_done_black_24dp">
+        </item>
+
+        <item
+            android:id="@+id/d2Erazor"
+            android:title="Erazor"
+            android:icon="@drawable/com_facebook_tooltip_blue_bottomnub">
+        </item>
+    </group>-->
+
+    <item android:title="Sizes">
+        <menu>
+            <group android:checkableBehavior="all">
+            <item android:id="@+id/small" android:title="@string/small" android:icon="@mipmap/ic_done_black_24dp" />
+            <item android:id="@+id/medium" android:title="@string/medium" android:icon="@mipmap/ic_done_black_24dp" />
+            <item android:id="@+id/large" android:title="@string/large" android:icon="@mipmap/ic_done_black_24dp" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Colors">
+        <menu>
+            <group android:checkableBehavior="all">
+                <item android:id="@+id/black" android:title="@string/black" android:icon="@drawable/black_drawer_circle" />
+                <item android:id="@+id/red" android:title="@string/red" android:icon="@drawable/red_drawer_circle" />
+                <item android:id="@+id/blue" android:title="@string/blue" android:icon="@drawable/blue_drawer_circle" />
+                <item android:id="@+id/green" android:title="@string/green" android:icon="@drawable/green_drawer_circle" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Tools">
+        <menu>
+            <group android:checkableBehavior="all">
+                <item android:id="@+id/paint" android:title="@string/paint" android:icon="@mipmap/ic_done_black_24dp" />
+                <item android:id="@+id/eraser" android:title="@string/eraser" android:icon="@mipmap/ic_done_black_24dp" />
+                <item android:id="@+id/clearAll" android:title="@string/clear_all" android:icon="@mipmap/ic_done_black_24dp" />
+            </group>
+        </menu>
+    </item>
+</menu>

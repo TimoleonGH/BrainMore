@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">BrainMore</string>
+    <string name="auth_failed">sign in failed!</string>
+    <string name="loading">Loading. Please wait...</string>
+
+    <!--Εγγραφή-->
+    <string name="signin">Εγγραφη</string>
+    <string name="first_name">Όνομα</string>
+    <string name="last_name">Επίθετο</string>
+    <string name="city">Πόλη</string>
+    <string name="address">Διεύθυνση</string>
+    <string name="phone">Κινητό</string>
+    <string name="interesting_for">Ενδιαφέρομαι για...</string>
+    <string name="logotherapy">Λογοθεραπεία</string>
+    <string name="learning">Μαθησιακό</string>
+    <string name="psychological_support">Ψυχολογική Υποστήριξη</string>
+
+    <!--Σύνδεση-->
+    <string name="login">Συνδεση</string>
+    <string name="email">Email</string>
+    <string name="password">Κωδικός</string>
+
+
+    <!-- Menu -->
+    <string name="shapes_copy">Αντιγραφή Σχημάτων</string>
+    <string name="memory_images">Μνήμη - Εικόνες</string>
+    <string name="sentences">Προτάσεις</string>
+
+    <!--Audio Activity-->
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+
+    <!-- Sentences Activity -->
+    <string name="dialog_sentences">Αν βγεις θα σβηστούν όλα. Έξοδος;</string>
+    <string name="yes">Ναι</string>
+    <string name="cancel">Άκυρο</string>
+
+    <!-- Image Memory Activity -->
+    <string name="right">Σωστά</string>
+    <string name="wrong">Λάθος</string>
+    <string name="check">Έλεγξε</string>
+    <string name="back">Πίσω</string>
+    <string name="play_again">Παίξε ξανά</string>
+    <string name="answer">απάντηση</string>
+    <string name="errors">Λάθη</string>
+    <string name="final_score">Τελικό Σκορ</string>
+    <string name="quit">Παραιτήσου</string>
+    <string name="logout">Αποσύνδεση</string>
+    <string name="send_message">Στείλε μήνυμα στον διαχειριστή</string>
+    <string name="send">Send</string>
+
+    <!--Drawer 1-->
+    <string-array name="navigation_drawer_items_array">
+        <item>Colors</item>
+        <item>Sizes</item>
+        <item>Eraser</item>
+    </string-array>
+
+
+    <!--Final Drawer-->
+    <string name="small">Μικρό</string>
+    <string name="medium">Μεσαίο</string>
+    <string name="large">Μεγάλο</string>
+    <string name="black">Μαύρο</string>
+    <string name="red">Κόκκινο</string>
+    <string name="blue">Μπλε</string>
+    <string name="green">Πράσινο</string>
+    <string name="paint">Χρώμα</string>
+    <string name="eraser">Γόμα</string>
+    <string name="clear_all">Καθαριμός Κάδρου</string>
+    <string name="helper">Βοηθός</string>
+</resources>

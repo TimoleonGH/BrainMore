@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/d2Colors"
+        android:title="Colors">
+    </item>
+
+    <item
+        android:id="@+id/d2Sizes"
+        android:title="Sizes">
+    </item>
+
+    <item
+        android:id="@+id/d2Erazor"
+        android:title="Erazor">
+    </item>
+</menu>

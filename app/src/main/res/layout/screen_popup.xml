@@ -1,0 +1,99 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="10sp" >-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/popup_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/white"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="@dimen/activity_vertical_margin"
+        app:cardElevation="@dimen/activity_vertical_margin" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginBottom="14dp"
+                android:text="Select categories"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <Button
+                android:id="@+id/btn_close_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Close"
+                android:visibility="gone"/>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/chk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="chk_1"
+                    android:textColor="@color/colorPrimary"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_marginLeft="14dp"/>
+
+                <CheckBox
+                    android:id="@+id/chk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="chk_2"
+                    android:checked="false"
+                    android:textColor="@color/colorPrimary"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_marginLeft="14dp"/>
+
+                <CheckBox
+                    android:id="@+id/chk3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="chk_3"
+                    android:textColor="@color/colorPrimary"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_marginLeft="14dp"/>
+
+                <Button
+                    android:id="@+id/displayB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="btn_display"
+                    android:textColor="@color/white"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="14dp"
+                    android:theme="@style/MyButton" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+<!--
+</LinearLayout>-->

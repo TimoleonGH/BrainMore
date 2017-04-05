@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:scrollbars="vertical"
+        app:behavior_peekHeight="120dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:text=""
+            android:hint="@string/send_message"
+            android:paddingLeft="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:ems="10"
+            android:maxLines="10"
+            android:lines="10"
+            android:id="@+id/messageET"
+            android:layout_weight="8"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="@color/colorPrimary"/>
+
+        <Button
+            android:text="@string/send"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/sendB"
+            android:layout_weight="2"
+            android:layout_gravity="right"
+            android:layout_marginRight="0dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leon.lamti.cc.signInNOTUSED.SetupActivity">
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setupEmail"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setupPassword"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/setupEmail"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setupFirstName"
+        android:hint="first name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/setupPassword"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setupLastName"
+        android:hint="last name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/setupFirstName"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setupTelephone"
+        android:hint="telephone number"
+        android:inputType="number"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/setupLastName"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setupAddress"
+        android:hint="address"
+        android:inputType="textPostalAddress"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/setupTelephone"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setupCity"
+        android:hint="city"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/setupAddress"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="Interesting for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/popupMenuB"
+        android:layout_below="@+id/setupCity"
+        android:layout_margin="10dp"
+        android:onClick="popupPopupMenu" />
+
+    <Button
+        android:text="Create Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/setupB" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupMenuB"
+        android:layout_alignRight="@+id/setupCity"
+        android:layout_alignEnd="@+id/setupCity"
+        android:id="@+id/loginB"
+        android:onClick="goToLogin" />
+
+</RelativeLayout>

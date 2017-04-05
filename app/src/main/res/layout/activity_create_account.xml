@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leon.lamti.cc.animationAccount.CreateAccountActivity"
+    android:background="@color/colorPrimaryDark"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <Button
+        android:text="@string/signin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signInCreateAccountCB"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/colorSignInCB"
+        android:transitionName="signInTraName"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailCET"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="32dp"
+        android:hint="@string/email"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="32dp"
+        android:singleLine="true"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/signInCreateAccountCB"
+        android:layout_marginTop="64dp"
+        app:layout_constraintHorizontal_bias="0.52"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorAccent"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem" />
+
+    <!--android:textColorHighlight="@color/colorPrimary"
+        android:backgroundTintMode="src_in"-->
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordCET"
+        android:hint="@string/password"
+        android:singleLine="true"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@+id/emailCET"
+        app:layout_constraintLeft_toLeftOf="@+id/emailCET"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/emailCET"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorAccent"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/firstNameCET"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/passwordCET"
+        app:layout_constraintLeft_toLeftOf="@+id/passwordCET"
+        android:hint="@string/first_name"
+        app:layout_constraintRight_toRightOf="@+id/passwordCET"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorAccent"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/lastNameCET"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameCET"
+        app:layout_constraintLeft_toLeftOf="@+id/firstNameCET"
+        app:layout_constraintRight_toRightOf="@+id/firstNameCET"
+        android:hint="@string/last_name"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorAccent"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/cityCET"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameCET"
+        app:layout_constraintLeft_toLeftOf="@+id/lastNameCET"
+        app:layout_constraintRight_toRightOf="@+id/lastNameCET"
+        android:hint="@string/city"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorAccent"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/addressCET"
+        app:layout_constraintLeft_toLeftOf="@+id/cityCET"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cityCET"
+        app:layout_constraintRight_toRightOf="@+id/cityCET"
+        android:hint="@string/address"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorAccent"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phoneCET"
+        app:layout_constraintTop_toBottomOf="@+id/addressCET"
+        app:layout_constraintLeft_toLeftOf="@+id/addressCET"
+        app:layout_constraintRight_toRightOf="@+id/addressCET"
+        android:hint="@string/phone"
+        android:maxLines="1"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorAccent"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem" />
+
+    <Button
+        android:text="@string/interesting_for"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/popupMenuB"
+        android:onClick="popupPopupMenu"
+        app:layout_constraintRight_toRightOf="@+id/phoneCET"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/phoneCET"
+        app:layout_constraintLeft_toLeftOf="@+id/phoneCET"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorAccent"/>
+
+</android.support.constraint.ConstraintLayout>

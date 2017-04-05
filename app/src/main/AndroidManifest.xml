@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leon.lamti.cc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".home.CC"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_brain_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Base">
+        <activity
+            android:name=".signInNOTUSED.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".not_used.SentencesActivity"
+            android:parentActivityName=".home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".home.BaseActivity" />
+        <activity android:name=".home.CC" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".games_activities.ImageMemoryActivity"
+            android:parentActivityName=".home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".games_activities.ShapesCopyActivity"
+            android:parentActivityName=".home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".signInNOTUSED.SetupActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".not_used.AudioActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".animationAccount.AccountActivity" />
+        <activity android:name=".animationAccount.LoginActivity" />
+        <activity android:name=".animationAccount.CreateAccountActivity" />
+
+        <service android:name=".email.IntentEmailService" />
+
+        <activity android:name=".games_activities.TheSentencesActivity"
+            android:parentActivityName=".home.HomeActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheetShapesCopy"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:weightSum="4"
+    android:background="@color/colorAccent"
+
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_twitter"
+        android:id="@+id/imageButton1"
+        android:layout_gravity="center"
+        tools:ignore="Suspicious0dp,VectorDrawableCompat"
+        android:background="@color/colorAccent" />
+
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_twitter"
+        android:id="@+id/imageButton2"
+        android:layout_gravity="center"
+        tools:ignore="Suspicious0dp,VectorDrawableCompat"
+        android:background="@color/colorAccent" />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_twitter"
+        android:id="@+id/imageButton3"
+        android:layout_gravity="center"
+        tools:ignore="Suspicious0dp,VectorDrawableCompat"
+        android:background="@color/colorAccent"/>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/com_facebook_button_like_icon_selected"
+        android:id="@+id/imageButton4"
+        android:layout_gravity="center"
+        tools:ignore="Suspicious0dp,VectorDrawableCompat"
+        android:background="@color/colorAccent"/>
+
+
+</LinearLayout>
